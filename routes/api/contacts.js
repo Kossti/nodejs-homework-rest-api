@@ -10,12 +10,12 @@ const router = express.Router();
 
 router.get("/", ctrl.get);
 
-router.get("/:contactId", ctrl.getById);
+// router.get("/:contactId", ctrl.getById);
 
-router.post("/", validateBody(schemas.addSchema), ctrl.add);
+// router.post("/", validateBody(schemas.addSchema), ctrl.add);
 
-router.delete("/:id", ctrl.deleteById);
+// router.delete("/:id", ctrl.deleteById);
 
-router.put("/:id", validateBody(schemas.addSchema), ctrl.updateById);
+// router.put("/:id", validateBody(schemas.addSchema), ctrl.updateById);
 
 module.exports = router;
