@@ -8,9 +8,12 @@ const logout = require("./logout");
 
 const { HttpError, ctrlWrapper } = require("../../helpers");
 
+const updateAvatar = require("./updateAvatar");
+
 module.exports = {
   register: ctrlWrapper(register),
   login: ctrlWrapper(login),
   getCurrent: ctrlWrapper(getCurrent),
   logout: ctrlWrapper(logout),
+  updateAvatar: ctrlWrapper(updateAvatar),
 };
